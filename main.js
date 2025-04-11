@@ -1,17 +1,23 @@
 let button = document.querySelector('p-button')
 
-button.addEventListener('c-click', (data) =>{
-    button.setAttribute('label', 'Made with love')
-})
 
-
-let data= {
-    url: 'https://i.pinimg.com/236x/da/28/45/da284514ce9062e40b9e22a31254760b.jpg',
-    title:'Goku le Gana'
+let data = {
+    url: 'https://placehold.co/400.png?text=Hello+World&font=roboto',
+    title: 'Lorem',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada sed nulla vel tempus. ',
+    detail: {
+        date: '10-10-2022',
+        category: 'Mice',
+        reference: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        notes: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        ]
+    }
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
     const card = document.querySelector('info-card')
     card.data = data
 })
-
